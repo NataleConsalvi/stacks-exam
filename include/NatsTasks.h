@@ -86,7 +86,7 @@ class Stack{
                 char doing = this->pop();
                 ret.push_back(doing);
                 vector<char> sub = subtasks.at(doing);
-                cout << "Debug: doing task '" << doing << "' =" << vec2str(sub) << endl;
+                cout << "Debug: doing task '" << doing << "' = " << vec2str(sub) << endl;
 
                 for(int i = sub.size() - 1; i > -1; i--){
                     this->push(sub[i]);
